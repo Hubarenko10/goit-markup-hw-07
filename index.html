@@ -16,54 +16,54 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<header class="header">
-			<div class="container nav-box">
-				<nav class="site-nav">
-					<a class="link-logo link link-logo-header" href="/">
-						<span class="logo">Web</span>
-						Studio
-					</a>
-					<ul class="site-nav-list list">
-						<li class="site-nav-item">
-							<a class="site-nav-link link current-page link-header current" href="./index.html">Студия</a>
-						</li>
-						<li class="site-nav-item">
-							<a class="site-nav-link link link-header" href="./portfolio.html">Портфолио</a>
-						</li>
-						<li class="site-nav-item">
-							<a class="site-nav-link link link-header" href="">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<ul class="contact-list list">
-					<li class="contact-list-item">
-						<a class="contact-link link" href="mailto:info@devstudio.com">
-							<svg class="contact-list-icon" width="16px" height="12px">
-								<use href="./images/symbol-defs.svg#envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
+	<header class="header">
+		<div class="container header__box">
+			<nav class="navigation">
+				<a class="navigation__logo navigation__logo-header link" href="/">
+					<span class="navigation_text--logo">Web</span>Studio 
+				</a>
+				<ul class="navigation__list list">
+					<li class="navigation__item navigation__item--color">
+						<a class="site-nav-link link current-page current link-header" href="./index.html">Студия</a>
 					</li>
-					<li class="contact-list-item">
-						<a class="contact-link link" href="tel:+380961111111">
-							<svg class="contact-list-icon" width="10px" height="16px">
-								<use href="./images/symbol-defs.svg#smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
+					<li class="navigation__item navigation__item--color">
+						<a class="site-nav-link link  link-header" href="./portfolio.html">Портфолио</a>
+					</li>
+					<li class="navigation__item navigation__item--color">
+						<a class="site-nav-link link link-header" href="#contacts">Контакты</a>
 					</li>
 				</ul>
-			</div>
-		</header>
+			</nav>
+			<ul class="contact list ">
+				<li class="contact__item">
+					<a class="contact__link link " href="mailto:info@devstudio.com">
+						<svg class="contact__icon" width="16px" height="12px">
+							<use href="./images/symbol-defs.svg#envelope"></use>
+						</svg>
+						info@devstudio.com
+					</a>
+	
+				</li>
+				<li class="contact__list">
+					<a class="contact__link link" href="tel:+380961111111">
+						<svg class="contact__icon" width="10px" height="16px">
+							<use href="./images/symbol-defs.svg#smartphone"></use>
+						</svg>+38 096 111 11 11
+					</a>
+	
+				</li>
+			</ul>
+		</div>
+	</header>
 		<main>
 			<section class="hero">
 				<div class="container">
-					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button class="btn" type="button" data-modal-open>Заказать услугу</button>
+					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+					<button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
 					<div class="backdrop is-hidden" data-modal>
-						<div class="modal-wrapper">
-							<button class="modal-btn" type="button" data-modal-close>
-								<svg class="modal-btn-svg" fill="#000" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px">
+						<div class="modal">
+							<button class="modal__btn" type="button" data-modal-close>
+								<svg class="modal__svg" fill="#000" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px">
 									<path
 										d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"
 										fill=""
@@ -115,7 +115,7 @@
 								</label>
 								<!--policy-privacy-->
 								<label class="form-policy-group">
-									<input type="checkbox" class="checkbox vissual-hidden" />
+									<input type="checkbox" class="checkbox vissual__hidden" />
 									<span class="custom-checkbox">
 										<svg class="custom-checkbox-icon" width="11px" height="8px">
 											<use href="./images/symbol-defs.svg#icon-checked"></use>
@@ -132,52 +132,52 @@
 					</div>
 				</div>
 			</section>
-			<section class="section benefits-list">
+			<section class="section benefits__list">
 				<div class="container">
-					<h2 class="vissual-hidden">Наши преимущества</h2>
+					<h2 class="vissual__hidden">Наши преимущества</h2>
 
-					<ul class="list list-ben">
-						<li class="list-ben-item">
-							<div class="list-ben-btn">
-								<svg class="list-ben-icon">
+					<ul class="list list__ben">
+						<li class="list__item">
+							<div class="list__btn">
+								<svg class="list__icon">
 									<use href="./images/symbol-defs.svg#antenna"></use>
 								</svg>
 							</div>
-							<h3 class="benefits-title">Внимание к деталям</h3>
-							<p class="benefits-item">
+							<h3 class="list__title">Внимание к деталям</h3>
+							<p class="list__text">
 								Идейные соображения, а также начало повседневной работы по формированию позиции.
 							</p>
 						</li>
-						<li class="list-ben-item">
-							<div class="list-ben-btn">
-								<svg class="list-ben-icon">
+						<li class="list__item">
+							<div class="list__btn">
+								<svg class="list__icon">
 									<use href="./images/symbol-defs.svg#clock"></use>
 								</svg>
 							</div>
-							<h3 class="benefits-title">Пунктуальность</h3>
-							<p class="benefits-item">
+							<h3 class="list__title">Пунктуальность</h3>
+							<p class="list__text">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
 						</li>
-						<li class="list-ben-item">
-							<div class="list-ben-btn">
-								<svg class="list-ben-icon">
+						<li class="list__item">
+							<div class="list__btn">
+								<svg class="list__icon">
 									<use href="./images/symbol-defs.svg#diagram"></use>
 								</svg>
 							</div>
-							<h3 class="benefits-title">Планирование</h3>
-							<p class="benefits-item">
+							<h3 class="list__title">Планирование</h3>
+							<p class="list__text">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
 						</li>
-						<li class="list-ben-item">
-							<div class="list-ben-btn">
-								<svg class="list-ben-icon">
+						<li class="list__item">
+							<div class="list__btn">
+								<svg class="list__icon">
 									<use href="./images/symbol-defs.svg#astronaut"></use>
 								</svg>
 							</div>
-							<h3 class="benefits-title">Современные технологии</h3>
-							<p class="benefits-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+							<h3 class="list__title">Современные технологии</h3>
+							<p class="list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 						</li>
 					</ul>
 				</div>
@@ -421,7 +421,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container foot-cont">
 				<div class="footer-left">
 					<a class="link-logo link footer-link" href="/">
